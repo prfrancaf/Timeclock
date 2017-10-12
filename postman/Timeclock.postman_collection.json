@@ -1,0 +1,498 @@
+{
+	"id": "198e751c-fc77-0f5e-c895-4cdfc17016fd",
+	"name": "Timeclock",
+	"description": "A solution to understand your time at work.",
+	"order": [],
+	"folders": [
+		{
+			"name": "days",
+			"description": "",
+			"collectionId": "198e751c-fc77-0f5e-c895-4cdfc17016fd",
+			"order": [
+				"13f3fc0b-732b-f3d8-0fa5-3e12f41c1b18",
+				"67ff189d-db93-e3ae-1fbf-e6c6e7bb9564",
+				"5c22898f-6ff4-f50a-6cd4-4cdb32646803",
+				"b6e29544-a82e-54ff-2bd1-07e16b97d2d8",
+				"26a971e6-c73e-4e12-0efc-4e5f48868c35"
+			],
+			"owner": "2172763",
+			"folder": "104baacf-ca48-22ef-2ade-d2c63e65370b",
+			"folders_order": [],
+			"id": "01a47fe1-144a-7aa2-4976-9bdf47a8a4bf"
+		},
+		{
+			"name": "timeclock",
+			"description": "",
+			"collectionId": "198e751c-fc77-0f5e-c895-4cdfc17016fd",
+			"order": [],
+			"owner": "2172763",
+			"folders_order": [
+				"25891684-b290-7cdc-0d03-72ea60bcdda7",
+				"01a47fe1-144a-7aa2-4976-9bdf47a8a4bf"
+			],
+			"id": "104baacf-ca48-22ef-2ade-d2c63e65370b"
+		},
+		{
+			"name": "users",
+			"description": "",
+			"collectionId": "198e751c-fc77-0f5e-c895-4cdfc17016fd",
+			"order": [
+				"c84f8cac-0933-bb51-1e76-118bda356b87",
+				"bcdb66a5-84e0-d714-6236-acaba9818227",
+				"f2d492e4-ca4f-3b08-6262-a41d56a5f05d",
+				"5b64ad68-a7d6-6d46-b684-4c5137355171",
+				"e21fcb5e-71b1-7fbc-ee08-6f0bd6dd3efd"
+			],
+			"owner": "2172763",
+			"folder": "104baacf-ca48-22ef-2ade-d2c63e65370b",
+			"folders_order": [],
+			"id": "25891684-b290-7cdc-0d03-72ea60bcdda7"
+		}
+	],
+	"folders_order": [
+		"104baacf-ca48-22ef-2ade-d2c63e65370b"
+	],
+	"timestamp": 1507816347749,
+	"owner": "2172763",
+	"public": false,
+	"requests": [
+		{
+			"id": "13f3fc0b-732b-f3d8-0fa5-3e12f41c1b18",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/days",
+			"folder": "01a47fe1-144a-7aa2-4976-9bdf47a8a4bf",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "name",
+					"value": "paulo",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "paulo@mail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "hours_per_day",
+					"value": "8",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507809589555,
+			"name": "/days",
+			"description": "",
+			"collectionId": "198e751c-fc77-0f5e-c895-4cdfc17016fd",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "1b947056-555a-a85a-aedc-3b5649fef16f"
+		},
+		{
+			"id": "26a971e6-c73e-4e12-0efc-4e5f48868c35",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/days/<id>",
+			"folder": "01a47fe1-144a-7aa2-4976-9bdf47a8a4bf",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "name",
+					"value": "paulo",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "paulo@mail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "hours_per_day",
+					"value": "8",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507815737844,
+			"name": "/days /<id>",
+			"description": "",
+			"collectionId": "198e751c-fc77-0f5e-c895-4cdfc17016fd",
+			"responses": []
+		},
+		{
+			"id": "5b64ad68-a7d6-6d46-b684-4c5137355171",
+			"headers": "//name: \nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "name",
+					"value": "",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/users/<id>",
+			"folder": "25891684-b290-7cdc-0d03-72ea60bcdda7",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "name",
+					"value": "roberto",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "paulo2@mail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "hours_per_day",
+					"value": "8",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507687630059,
+			"name": "/users/<id>",
+			"description": "",
+			"collectionId": "198e751c-fc77-0f5e-c895-4cdfc17016fd",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "f81f695d-398f-924b-20ca-6177f62da642"
+		},
+		{
+			"id": "5c22898f-6ff4-f50a-6cd4-4cdb32646803",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/days",
+			"folder": "01a47fe1-144a-7aa2-4976-9bdf47a8a4bf",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507815038631,
+			"name": "/days",
+			"description": "",
+			"collectionId": "198e751c-fc77-0f5e-c895-4cdfc17016fd",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "22341257-e1ee-6edd-92b3-7374f6e6eeee",
+			"rawModeData": "{\r\n        \"day\" : \"2017-10-13 00:00:00\",\r\n        \"user_id\" : \"59dd696a57819a304c2d0bee\",\r\n        \"inputs\" : [\r\n                {\r\n                        \"enter\" : \"2017-10-13 11:00:00\",\r\n                        \"out\" : \"2017-10-13 15:00:00\",\r\n                        \"type\" : 0\r\n                },\r\n                {\r\n                        \"enter\" : \"2017-10-13 15:00:00\",\r\n                        \"out\" : \"2017-10-13 16:00:00\",\r\n                        \"type\" : 1\r\n                },\r\n                {\r\n                        \"enter\" : \"2017-10-13 16:00:00\",\r\n                        \"out\" : \"2017-10-13 20:00:00\",\r\n                        \"type\" : 0\r\n                }\r\n        ]\r\n}"
+		},
+		{
+			"id": "67ff189d-db93-e3ae-1fbf-e6c6e7bb9564",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/days/<id>",
+			"folder": "01a47fe1-144a-7aa2-4976-9bdf47a8a4bf",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "name",
+					"value": "paulo",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "paulo@mail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "hours_per_day",
+					"value": "8",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507815200028,
+			"name": "/days /<id>",
+			"description": "",
+			"collectionId": "198e751c-fc77-0f5e-c895-4cdfc17016fd",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "41d17b5f-dceb-2e91-0e75-c39aac9dd5df"
+		},
+		{
+			"id": "b6e29544-a82e-54ff-2bd1-07e16b97d2d8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/days/<id>",
+			"folder": "01a47fe1-144a-7aa2-4976-9bdf47a8a4bf",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507815986964,
+			"name": "/days /<id>",
+			"description": "",
+			"collectionId": "198e751c-fc77-0f5e-c895-4cdfc17016fd",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "365f6655-d102-062b-9f22-61f812ac2bc6",
+			"rawModeData": "{\r\n\t\"Created_date\": \"2017-10-12T08:36:58.596Z\"\r\n}"
+		},
+		{
+			"id": "bcdb66a5-84e0-d714-6236-acaba9818227",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/users/<id>",
+			"folder": "25891684-b290-7cdc-0d03-72ea60bcdda7",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507687451461,
+			"name": "/users/<id>",
+			"description": "",
+			"collectionId": "198e751c-fc77-0f5e-c895-4cdfc17016fd",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "ce3c1f6c-26cb-94ca-045c-d643502d4993"
+		},
+		{
+			"id": "c84f8cac-0933-bb51-1e76-118bda356b87",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/users",
+			"folder": "25891684-b290-7cdc-0d03-72ea60bcdda7",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507687410081,
+			"name": "/users",
+			"description": "",
+			"collectionId": "198e751c-fc77-0f5e-c895-4cdfc17016fd",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "d55e8f43-a8d9-a14b-58db-6bd61ddb5f8c"
+		},
+		{
+			"id": "e21fcb5e-71b1-7fbc-ee08-6f0bd6dd3efd",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/users/<id>",
+			"folder": "25891684-b290-7cdc-0d03-72ea60bcdda7",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507687653090,
+			"name": "/users/<id>",
+			"description": "",
+			"collectionId": "198e751c-fc77-0f5e-c895-4cdfc17016fd",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "c49f89dd-8e81-215b-5d56-f6fe7219577a"
+		},
+		{
+			"id": "f2d492e4-ca4f-3b08-6262-a41d56a5f05d",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/users",
+			"folder": "25891684-b290-7cdc-0d03-72ea60bcdda7",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "paulo",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "paulo@mail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "hours_per_day",
+					"value": "8",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507687555219,
+			"name": "/users",
+			"description": "",
+			"collectionId": "198e751c-fc77-0f5e-c895-4cdfc17016fd",
+			"responses": []
+		}
+	]
+}
