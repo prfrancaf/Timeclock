@@ -12,4 +12,13 @@ module.exports = function(app) {
     .get(days.read_a_day)
     .put(days.update_a_day)
     .delete(days.delete_a_day);
+
+
+  app.route('/get_days_by_user/:userId')
+    .get(days.get_days_by_user);
+
+
+  app.route('/get_status_time/:userId&:start&:end')
+    .get(days.get_status_time);
+
 };

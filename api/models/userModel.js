@@ -20,6 +20,12 @@ var UserSchema = new Schema({
     type: Number,
     required: 'Kindly enter the hours per day of the user'
   },
+  fixed_schedule:{
+    type: Array
+  },
+  lunch_fixed_schedule:{
+    type: Array
+  },
   Created_date: {
     type: Date,
     default: Date.now

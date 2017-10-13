@@ -16,6 +16,10 @@ var DaySchema = new Schema({
     type: Array,
     required: 'Kindly enter the password of the day'
   },
+  status:{//0 - abono, 1- normal, 2- feriado, 3- falta
+    type: Number,
+    required: 'Kindly enter the status of the day'
+  },
   Created_date: {
     type: Date,
     default: Date.now
