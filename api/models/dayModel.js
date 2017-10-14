@@ -13,8 +13,7 @@ var DaySchema = new Schema({
     required: 'Kindly enter the email of the day'
   },
   inputs: {
-    type: Array,
-    required: 'Kindly enter the password of the day'
+    type: Array
   },
   status:{//0 - abono, 1- normal, 2- feriado, 3- falta
     type: Number,
