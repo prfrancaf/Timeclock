@@ -21,4 +21,7 @@ module.exports = function(app) {
   app.route('/get_status_time/:userId&:start&:end')
     .get(days.get_status_time);
 
+  app.route('/get_status_time_by_id/:userId')
+    .get(days.get_status_time_by_id);
+
 };

@@ -15,7 +15,7 @@ var DaySchema = new Schema({
   inputs: {
     type: Array
   },
-  status:{//0 - abono, 1- normal, 2- feriado, 3- falta
+  status:{//0 - abono, 1- normal, 2- falta, 3- feriado
     type: Number,
     required: 'Kindly enter the status of the day'
   },
