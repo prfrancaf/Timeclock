@@ -75,10 +75,10 @@ exports.get_status_time = function(req, res){
             number_of_hours = hours_per_day * days.length*60
             var minutes = (amount-number_of_hours);
             if (minutes>0){
-              res.json(getTimeFromMins(minutes).toString());
+              res.json(get_time_from_minutes(minutes).toString());
             }
             else{
-              res.json("-"+getTimeFromMins(minutes*-1).toString());
+              res.json("-"+get_time_from_minutes(minutes*-1).toString());
             }
           }); 
       });  
@@ -97,10 +97,10 @@ exports.get_status_time_by_id = function(req, res){
           number_of_hours = hours_per_day * days.length*60
           var minutes = (amount-number_of_hours);
           if (minutes>0){
-            res.json(getTimeFromMins(minutes).toString());
+            res.json(get_time_from_minutes(minutes).toString());
           }
           else{
-            res.json("-"+getTimeFromMins(minutes*-1).toString());
+            res.json("-"+get_time_from_minutes(minutes*-1).toString());
           }
         }); 
     });  
@@ -137,7 +137,7 @@ var get_amount_of_days = function(days, hours_per_day){
   });
 };
 
-var getTimeFromMins = function(mins) {
+var get_time_from_minutes = function(mins) {
   var hours = mins / 60 | 0,
       minutes = mins % 60 | 0;
   return moment.utc().hours(hours).minutes(minutes).format("hh:mm");
