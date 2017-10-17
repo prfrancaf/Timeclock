@@ -1,6 +1,7 @@
 'use strict';
 
 var Promise = require('promise');
+var moment = require('moment');
 var mongoose = require('mongoose'),
 Day = mongoose.model('Days'),
 User = mongoose.model('Users');
@@ -71,8 +72,14 @@ exports.get_status_time = function(req, res){
     var number_of_hours = 0;
     Promise.resolve(get_hours_per_day(req.params.userId)).then(function(hours_per_day){
           Promise.resolve(get_amount_of_days(days, hours_per_day)).then(function(amount){
-            number_of_hours = hours_per_day * days.length
-            res.json(amount-number_of_hours); 
+            number_of_hours = hours_per_day * days.length*60
+            var minutes = (amount-number_of_hours);
+            if (minutes>0){
+              res.json(getTimeFromMins(minutes).toString());
+            }
+            else{
+              res.json("-"+getTimeFromMins(minutes*-1).toString());
+            }
           }); 
       });  
   });
@@ -87,8 +94,14 @@ exports.get_status_time_by_id = function(req, res){
     var number_of_hours = 0;
     Promise.resolve(get_hours_per_day(req.params.userId)).then(function(hours_per_day){
         Promise.resolve(get_amount_of_days(days, hours_per_day)).then(function(amount){
-          number_of_hours = hours_per_day * days.length
-          res.json(amount-number_of_hours); 
+          number_of_hours = hours_per_day * days.length*60
+          var minutes = (amount-number_of_hours);
+          if (minutes>0){
+            res.json(getTimeFromMins(minutes).toString());
+          }
+          else{
+            res.json("-"+getTimeFromMins(minutes*-1).toString());
+          }
         }); 
     });  
   });
@@ -112,14 +125,20 @@ var get_amount_of_days = function(days, hours_per_day){
         if(day.status === 1){
           day.inputs.forEach(function get_input_item(item) {
               if(item.type===0){
-                  amount+=new Date(item.out).getHours()-new Date(item.enter).getHours();
+                  amount+=moment.duration(moment(item.out).diff(moment(item.enter))).asMinutes();
               }
         });
        }
        else if(day.status === 0 || day.status === 3){
-        amount+=hours_per_day;
+        amount+=hours_per_day*60;       
       }
-    });   
+    });
     resolve(amount);
   });
+};
+
+var getTimeFromMins = function(mins) {
+  var hours = mins / 60 | 0,
+      minutes = mins % 60 | 0;
+  return moment.utc().hours(hours).minutes(minutes).format("hh:mm");
 }
